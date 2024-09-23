@@ -47,7 +47,6 @@ footer .content .reader {
     display: flex;
     gap: 10px;
     align-items: center;
-    
     margin-top: 10px;
 }
 
@@ -97,6 +96,7 @@ footer .content .reader img {
 }
 
 @media (max-width: 1023px) {
+    .big-footer .select-reciter .reciters,
     .big-footer .content .audio-reciter {
         width: 450px;
     }
@@ -104,12 +104,14 @@ footer .content .reader img {
 
 
 @media (max-width: 767px) {
+    .big-footer .select-reciter .reciters,
     .big-footer .content .audio-reciter {
         width: 400px;
     }
 }
 
 @media (max-width: 550px) {
+    .big-footer .select-reciter .reciters,
     .big-footer .content .audio-reciter {
         width: 350px;
     }
