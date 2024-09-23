@@ -1,0 +1,99 @@
+.home {
+    margin-bottom: 240px;    
+}
+
+.home .home-section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    gap: 14px;
+}
+
+.home .home-section-one h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.home .home-section-one p {
+    font-size: 1.35rem;
+    max-width: 700px;
+    text-align: center;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+
+/* Section Two */
+
+.home-section-two {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.home-section-two .surah-card {
+    border: 1px solid rgba(0,0,0, 0.2);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px 0px rgba(232, 231, 231, 0.75);
+}
+
+.home-section-two .surah-card:hover {
+    background-color: #eee;
+}
+
+.home-section-two .play-btn {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1023px) {
+    .home .home-section-one {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .home .home-section-one h1 {
+        font-size: 3rem;
+    }
+    .home .home-section-one p {
+        font-size: 1.3rem;
+    }
+
+    .home-section-two {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .home .home-section-one {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .home .home-section-one h1 {
+        font-size: 2.25rem;
+    }
+    .home .home-section-one p {
+        font-size: 1.15rem;
+    }
+
+    .home-section-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .home-section-two {
+        grid-template-columns: 1fr;
+    }
+}
